@@ -61,7 +61,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -160,20 +160,48 @@
 </packages>
 <symbols>
 <symbol name="Q">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
 <wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.778" x2="-1.016" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.778" x2="1.016" y2="1.778" width="0.254" layer="94"/>
+<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
 <text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="1" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="Q-SHIELD">
+<pin name="CRYSTAL1" x="0" y="-2.54" visible="off" length="point" rot="R90"/>
+<pin name="CRYSTAL2" x="0" y="2.54" visible="off" length="point" rot="R90"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-0.508" x2="2.032" y2="0.508" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0.508" x2="-2.032" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="0.508" x2="-2.032" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="-0.508" x2="2.032" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.302" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="0" x2="-3.302" y2="2.032" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="2.032" x2="-2.54" y2="2.032" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="0" x2="-3.302" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="-2.032" x2="-2.54" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="3.302" y2="0" width="0.254" layer="94"/>
+<wire x1="3.302" y1="0" x2="3.302" y2="2.032" width="0.254" layer="94"/>
+<wire x1="3.302" y1="2.032" x2="2.54" y2="2.032" width="0.254" layer="94"/>
+<wire x1="3.302" y1="0" x2="3.302" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="3.302" y1="-2.032" x2="2.54" y2="-2.032" width="0.254" layer="94"/>
+<pin name="GND1" x="-5.08" y="0" visible="off" length="point" rot="R90"/>
+<pin name="GND2" x="5.08" y="0" visible="off" length="point" rot="R90"/>
+<text x="2.54" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -211,16 +239,18 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MJ-CRYSTAL">
+<deviceset name="MJ-CRYSTAL" prefix="Y">
 <description>Miniature size: 5.0mm x 3.2mm x 1.0mm height</description>
 <gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
+<gate name="G$1" symbol="Q-SHIELD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="MJ">
 <connects>
-<connect gate="G$1" pin="1" pad="CRYSTAL1"/>
-<connect gate="G$1" pin="2" pad="CRYSTAL2"/>
+<connect gate="G$1" pin="CRYSTAL1" pad="CRYSTAL1"/>
+<connect gate="G$1" pin="CRYSTAL2" pad="CRYSTAL2"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -228,16 +258,18 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MQ-CRYSTAL">
+<deviceset name="MQ-CRYSTAL" prefix="Y">
 <description>Miniature size: 7.0mm x 5mm x 1.2mm height</description>
 <gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
+<gate name="G$1" symbol="Q-SHIELD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="MQ">
 <connects>
-<connect gate="G$1" pin="1" pad="CRYSTAL1"/>
-<connect gate="G$1" pin="2" pad="CRYSTAL2"/>
+<connect gate="G$1" pin="CRYSTAL1" pad="CRYSTAL1"/>
+<connect gate="G$1" pin="CRYSTAL2" pad="CRYSTAL2"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -245,16 +277,18 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MT-CRYSTAL">
+<deviceset name="MT-CRYSTAL" prefix="Y">
 <description>Ultra-small package 3.2mm x 2.5mm x 0.6mm</description>
 <gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
+<gate name="G$1" symbol="Q-SHIELD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="MT">
 <connects>
-<connect gate="G$1" pin="1" pad="CRYSTAL1"/>
-<connect gate="G$1" pin="2" pad="CRYSTAL2"/>
+<connect gate="G$1" pin="CRYSTAL1" pad="CRYSTAL1"/>
+<connect gate="G$1" pin="CRYSTAL2" pad="CRYSTAL2"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -262,16 +296,18 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="X22-CRYSTAL">
+<deviceset name="X22-CRYSTAL" prefix="Y">
 <description>Ultra-miniature package 2.5 x 2.0 x 0.6mm</description>
 <gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
+<gate name="G$1" symbol="Q-SHIELD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="X22">
 <connects>
-<connect gate="G$1" pin="1" pad="CRYSTAL1"/>
-<connect gate="G$1" pin="2" pad="CRYSTAL2"/>
+<connect gate="G$1" pin="CRYSTAL1" pad="CRYSTAL1"/>
+<connect gate="G$1" pin="CRYSTAL2" pad="CRYSTAL2"/>
+<connect gate="G$1" pin="GND1" pad="P$1"/>
+<connect gate="G$1" pin="GND2" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
