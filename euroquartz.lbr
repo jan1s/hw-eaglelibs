@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -78,8 +78,8 @@
 <wire x1="1.6" y1="0.75" x2="1.6" y2="-0.75" width="0.127" layer="51"/>
 <wire x1="1.6" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="51"/>
 <wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.127" layer="51"/>
-<text x="-1.75" y="1.25" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.75" y="-1.75" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-1.75" y="1.25" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.75" y="-2.512" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="EQ162">
 <smd name="P$1" x="-1.7" y="0" dx="1.9" dy="1.1" layer="1" rot="R90"/>
@@ -88,8 +88,8 @@
 <wire x1="2.05" y1="0.75" x2="2.05" y2="-0.75" width="0.127" layer="51"/>
 <wire x1="2.05" y1="-0.75" x2="-2.05" y2="-0.75" width="0.127" layer="51"/>
 <wire x1="-2.05" y1="-0.75" x2="-2.05" y2="0.75" width="0.127" layer="51"/>
-<text x="-2.25" y="1.25" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-2.25" y="-1.75" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-2.25" y="1.25" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.25" y="-2.512" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="MJ">
 <smd name="GND1" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
@@ -104,8 +104,8 @@
 <wire x1="2.5" y1="0.45" x2="2.5" y2="-0.45" width="0.127" layer="21"/>
 <wire x1="-0.75" y1="-1.6" x2="0.75" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="0.45" x2="-2.5" y2="-0.45" width="0.127" layer="21"/>
-<text x="-2.75" y="2" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-2.75" y="-2.5" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-2.75" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.75" y="-3.262" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="MQ">
 <smd name="GND1" x="-3.15" y="1.35" dx="1.9" dy="1.1" layer="1"/>
@@ -124,8 +124,8 @@
 <wire x1="3.5" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="-2.5" x2="-3.5" y2="-2.05" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="-0.65" x2="-3.5" y2="0.65" width="0.127" layer="21"/>
-<text x="-3.5" y="2.75" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-3.25" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-3.5" y="3.004" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-4.266" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="MT">
 <smd name="GND1" x="-1.1" y="0.9" dx="1.3" dy="1" layer="1"/>
@@ -140,8 +140,8 @@
 <wire x1="1.6" y1="0.25" x2="1.6" y2="-0.25" width="0.127" layer="21"/>
 <wire x1="-0.25" y1="-1.25" x2="0.25" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="-0.25" x2="-1.6" y2="0.25" width="0.127" layer="21"/>
-<text x="-1.75" y="1.75" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.75" y="-2.25" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-1.75" y="1.75" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.75" y="-3.012" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="X22">
 <smd name="P$1" x="-0.8" y="0.6" dx="1.2" dy="1" layer="1"/>
@@ -154,8 +154,8 @@
 <wire x1="1.25" y1="1" x2="-1.25" y2="1" width="0.127" layer="51"/>
 <wire x1="-0.05" y1="1" x2="0.05" y2="1" width="0.127" layer="21"/>
 <wire x1="-0.05" y1="-1" x2="0.05" y2="-1" width="0.127" layer="21"/>
-<text x="-1.5" y="1.25" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.5" y="-2" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-1.5" y="1.504" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.5" y="-2.762" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -205,7 +205,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="EQ161-CRYSTAL">
+<deviceset name="EQ161-CRYSTAL" prefix="Y">
 <description>￼Miniature SMD 3.2 x 1.5 x 0.75mm</description>
 <gates>
 <gate name="G$1" symbol="Q" x="0" y="0"/>
@@ -222,7 +222,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="EQ162-CRYSTAL">
+<deviceset name="EQ162-CRYSTAL" prefix="Y">
 <description>￼Miniature SMD 4.1 x 1.5 x 0.75mm</description>
 <gates>
 <gate name="G$1" symbol="Q" x="0" y="0"/>
