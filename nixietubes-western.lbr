@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -109,19 +109,19 @@ Height from PCB: 47.6mm</description>
 &lt;br&gt;
 Tube diameter: 19mm&lt;br&gt;
 Height from PCB: 42.5mm</description>
-<pad name="K3" x="1.27" y="0.4" drill="0.8"/>
-<pad name="K0" x="-1.27" y="0.4" drill="0.8"/>
-<pad name="K9" x="-1.27" y="2.94" drill="0.8"/>
-<pad name="K2" x="1.27" y="2.94" drill="0.8"/>
-<pad name="K1" x="1.27" y="5.48" drill="0.8"/>
-<pad name="K8" x="-1.27" y="5.48" drill="0.8"/>
-<pad name="K7" x="-1.27" y="-2.14" drill="0.8"/>
-<pad name="K6" x="-1.27" y="-4.68" drill="0.8"/>
-<pad name="K4" x="1.27" y="-2.14" drill="0.8"/>
-<pad name="K5" x="1.27" y="-4.68" drill="0.8"/>
+<pad name="K0" x="1.27" y="0.4" drill="0.8"/>
+<pad name="K3" x="-1.27" y="0.4" drill="0.8"/>
+<pad name="K2" x="-1.27" y="2.94" drill="0.8"/>
+<pad name="K9" x="1.27" y="2.94" drill="0.8"/>
+<pad name="K8" x="1.27" y="5.48" drill="0.8"/>
+<pad name="K1" x="-1.27" y="5.48" drill="0.8"/>
+<pad name="K4" x="-1.27" y="-2.14" drill="0.8"/>
+<pad name="K5" x="-1.27" y="-4.68" drill="0.8"/>
+<pad name="K7" x="1.27" y="-2.14" drill="0.8"/>
+<pad name="K6" x="1.27" y="-4.68" drill="0.8"/>
 <pad name="A2" x="3.81" y="-2.14" drill="0.8"/>
-<pad name="PR" x="3.81" y="0.4" drill="0.8"/>
-<pad name="KDP" x="-3.81" y="0.4" drill="0.8"/>
+<pad name="KDP" x="3.81" y="0.4" drill="0.8"/>
+<pad name="PR" x="-3.81" y="0.4" drill="0.8"/>
 <pad name="A1" x="-3.81" y="-2.14" drill="0.8"/>
 <circle x="0" y="0" radius="9.5" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="9" width="0.127" layer="51"/>
@@ -243,10 +243,12 @@ Height from PCB: 42.5mm</description>
 <text x="19.685" y="0.254" size="1.778" layer="97" align="bottom-center">DP</text>
 <text x="-17.145" y="0.254" size="1.778" layer="97" align="bottom-center">PR</text>
 <text x="-0.254" y="6.35" size="1.778" layer="97" rot="R90" align="bottom-center">A</text>
+<text x="17.78" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="17.78" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="Z573M">
+<deviceset name="Z573M" prefix="N">
 <gates>
 <gate name="G$1" symbol="Z573M" x="0" y="0"/>
 </gates>
@@ -273,7 +275,7 @@ Height from PCB: 42.5mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ZM1000">
+<deviceset name="ZM1000" prefix="N">
 <gates>
 <gate name="G$1" symbol="ZM1000" x="0" y="0"/>
 </gates>
