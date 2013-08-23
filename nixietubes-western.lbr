@@ -249,6 +249,17 @@ Height from PCB: 42.5mm</description>
 </symbols>
 <devicesets>
 <deviceset name="Z573M" prefix="N">
+<description>&lt;p&gt;Cold cathode, neon filled, side viewing indicator tubes.
+The Z573M is coated with a red filter to improve the contrast of display.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Numeral height: 13 mm&lt;/li&gt;
+&lt;li&gt;Minimum distance between mounting centres: 19 mm&lt;/li&gt;
+&lt;li&gt;Numerals: 1 2 3 4 5 6 7 8 9 0 &lt;/li&gt;
+&lt;li&gt;Decimal point: to the right of the numerals&lt;/li&gt;
+&lt;li&gt;Cathode current, minimum: 1.5 mA, maximum: 2.5 mA, maximum peak: 12mA&lt;/li&gt;
+&lt;li&gt;Minimum supply voltage: 170 V&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="Z573M" x="0" y="0"/>
 </gates>
@@ -276,6 +287,18 @@ Height from PCB: 42.5mm</description>
 </devices>
 </deviceset>
 <deviceset name="ZM1000" prefix="N">
+<description>&lt;p&gt;Cold cathode, neon filled, side viewing indicator tubes with long life expectancy.
+The ZM1000R is coated with a red filter to improve the contrast of display.
+These tubes incorporate a decimal point and are fitted with a pin base to suid the standard grid (2.54mm). A primer allows ionisation without delay in strobe type or blanking applications.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Numeral height: 14 mm&lt;/li&gt;
+&lt;li&gt;Minimum distance between mounting centres: 19 mm&lt;/li&gt;
+&lt;li&gt;Numerals: 1 2 3 4 5 6 7 8 9 0 &lt;/li&gt;
+&lt;li&gt;Decimal point: to the left of the numerals&lt;/li&gt;
+&lt;li&gt;Cathode current, average: 2.5 mA, maximum peak: 12mA&lt;/li&gt;
+&lt;li&gt;Minimum supply voltage: 170 V&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ZM1000" x="0" y="0"/>
 </gates>
