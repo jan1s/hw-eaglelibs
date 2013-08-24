@@ -69,7 +69,8 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>EUROQUARTZ Crystals</description>
+<description>&lt;h1&gt;EUROQUARTZ Crystals&lt;/h1&gt;
+&lt;author&gt;Created by jan1s&lt;/author&gt;</description>
 <packages>
 <package name="EQ161">
 <smd name="P$1" x="-1.25" y="0" dx="1.8" dy="1" layer="1" rot="R90"/>

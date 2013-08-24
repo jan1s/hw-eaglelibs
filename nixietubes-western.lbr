@@ -69,6 +69,8 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;h1&gt;Western Nixietubes&lt;/h1&gt;
+&lt;author&gt;Created by jan1s&lt;/author&gt;</description>
 <packages>
 <package name="Z57XX">
 <description>This is the footprint suitable for the following nixie tubes: &lt;br&gt;
