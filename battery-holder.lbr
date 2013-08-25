@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -129,6 +129,57 @@
 <text x="10.16" y="-10.16" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="10.16" y="1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="HARWIN-CR1220">
+<smd name="NEG" x="0" y="8.26" dx="2.3" dy="4.3" layer="1"/>
+<smd name="POS" x="0" y="-7.58" dx="2.3" dy="3.66" layer="1"/>
+<hole x="0" y="3.75" drill="1"/>
+<hole x="0" y="-3.75" drill="1.25"/>
+<wire x1="-7" y1="-6.25" x2="-7" y2="-6.75" width="0.127" layer="51"/>
+<wire x1="7" y1="-6.75" x2="7" y2="-6.25" width="0.127" layer="51"/>
+<wire x1="-7" y1="-6.25" x2="-6.5" y2="-5.75" width="0.127" layer="51" curve="-90"/>
+<wire x1="-6.5" y1="-7.25" x2="-7" y2="-6.75" width="0.127" layer="51" curve="-90"/>
+<wire x1="6.5" y1="-5.75" x2="7" y2="-6.25" width="0.127" layer="51" curve="-90"/>
+<wire x1="7" y1="-6.75" x2="6.5" y2="-7.25" width="0.127" layer="51" curve="-90"/>
+<wire x1="-6.5" y1="-7.25" x2="-4.5" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-7.25" x2="-2.5" y2="-7.75" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-7.75" x2="-2" y2="-7.75" width="0.127" layer="51"/>
+<wire x1="-2" y1="-6.75" x2="-6.5" y2="-6.75" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="-6.75" x2="-6.5" y2="-6.25" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="-6.25" x2="-3.5" y2="-6.25" width="0.127" layer="51"/>
+<wire x1="-2" y1="-6.75" x2="-2" y2="-7.75" width="0.127" layer="51" curve="-180"/>
+<wire x1="-3" y1="-5.75" x2="-3.5" y2="-6.25" width="0.127" layer="51" curve="-90"/>
+<wire x1="-3" y1="-5.75" x2="-3" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-6.5" y1="-5.75" x2="-5" y2="-5.75" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-5" x2="-3" y2="-5.5" width="0.127" layer="51" curve="-53.130102"/>
+<wire x1="-4.75" y1="-5.25" x2="-5" y2="-5.75" width="0.127" layer="51" curve="-120"/>
+<wire x1="3" y1="-5.5" x2="3.25" y2="-5" width="0.127" layer="51" curve="-36.869898"/>
+<wire x1="-3.25" y1="-5" x2="3.25" y2="-5" width="0.127" layer="51" curve="-299.963265"/>
+<wire x1="-4.75" y1="-5.25" x2="4.75" y2="-5.25" width="0.127" layer="51" curve="-282.088184"/>
+<wire x1="5" y1="-5.75" x2="4.75" y2="-5.25" width="0.127" layer="51" curve="-120"/>
+<wire x1="5" y1="-5.75" x2="6.5" y2="-5.75" width="0.127" layer="51"/>
+<wire x1="3" y1="-5.5" x2="3" y2="-5.75" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-6.25" x2="3" y2="-5.75" width="0.127" layer="51" curve="-90"/>
+<wire x1="3.5" y1="-6.25" x2="6.5" y2="-6.25" width="0.127" layer="51"/>
+<wire x1="6.5" y1="-6.25" x2="6.5" y2="-6.75" width="0.127" layer="51"/>
+<wire x1="6.5" y1="-6.75" x2="2" y2="-6.75" width="0.127" layer="51"/>
+<wire x1="2" y1="-7.75" x2="2" y2="-6.75" width="0.127" layer="51" curve="-180"/>
+<wire x1="2" y1="-7.75" x2="2.5" y2="-7.75" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-7.75" x2="4.5" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="4.5" y1="-7.25" x2="6.5" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-6.25" y1="-6.5" x2="-1.75" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="-6.5" x2="1.75" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="1.75" y1="-6.5" x2="6.25" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="-6.5" x2="-1.75" y2="-6" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="-6" x2="-2.25" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-2.25" y1="-5.5" x2="2.25" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="2.25" y1="-5.5" x2="1.75" y2="-6" width="0.127" layer="51"/>
+<wire x1="1.75" y1="-6" x2="1.75" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="-6" x2="1.75" y2="-6" width="0.127" layer="51"/>
+<rectangle x1="-0.75" y1="-9" x2="0.75" y2="-6.5" layer="51"/>
+<rectangle x1="-0.75" y1="8.125" x2="0.75" y2="10" layer="51"/>
+<text x="-3" y="0" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-1.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CR2032">
@@ -151,6 +202,22 @@
 </gates>
 <devices>
 <device name="" package="CH28-2032LF">
+<connects>
+<connect gate="G$1" pin="NEG" pad="NEG"/>
+<connect gate="G$1" pin="POS" pad="POS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CR1220-HOLDER">
+<gates>
+<gate name="G$1" symbol="CR2032" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HARWIN-CR1220">
 <connects>
 <connect gate="G$1" pin="NEG" pad="NEG"/>
 <connect gate="G$1" pin="POS" pad="POS"/>
