@@ -72,7 +72,7 @@
 <description>&lt;h1&gt;Western Nixietubes&lt;/h1&gt;
 &lt;author&gt;Created by jan1s&lt;/author&gt;</description>
 <packages>
-<package name="Z57XX">
+<package name="Z570M">
 <description>This is the footprint suitable for the following nixie tubes: &lt;br&gt;
 * Z570M &lt;br&gt;
 * Z5700M &lt;br&gt;
@@ -136,6 +136,16 @@ Height from PCB: 42.5mm</description>
 <pad name="IC2" x="3.81" y="2.94" drill="0.8"/>
 </package>
 <package name="ZM1020">
+<description>This is the footprint suitable for the following nixie tubes: &lt;br&gt;
+* ZM1020 &lt;br&gt;
+* ZM1022 &lt;br&gt;
+* Z520M &lt;br&gt;
+* Z560M &lt;br&gt;
+* Z5600M &lt;br&gt;
+&lt;br&gt;
+Tube diameter: 30mm&lt;br&gt;
+Height from PCB: 26.5mm&lt;br&gt;
+Symbol Height: 15.5mm</description>
 <circle x="0" y="0" radius="15" width="0.127" layer="51"/>
 <pad name="1" x="0" y="-8.325" drill="1.2"/>
 <pad name="13" x="-6.51" y="-5.19" drill="1.2"/>
@@ -154,6 +164,35 @@ Height from PCB: 42.5mm</description>
 <text x="-15" y="-15" size="1.27" layer="25">&gt;NAME</text>
 <text x="-15" y="-17" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="0" y="0" radius="13.5" width="0.127" layer="51"/>
+</package>
+<package name="ZM1240">
+<description>This is the footprint suitable for the following nixie tubes: &lt;br&gt;
+* ZM1240 &lt;br&gt;
+* ZM1242 &lt;br&gt;
+* CD66 &lt;br&gt;
+&lt;br&gt;
+Tube diameter: 19mm&lt;br&gt;
+Height from PCB: 48mm&lt;br&gt;
+Symbol Height: 16mm</description>
+<circle x="0" y="0" radius="9.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="9" width="0.127" layer="51"/>
+<pad name="6" x="0" y="4.7" drill="0.8"/>
+<pad name="5" x="2.35" y="4.07" drill="0.8"/>
+<pad name="4" x="4.07" y="2.35" drill="0.8"/>
+<pad name="3" x="4.7" y="0" drill="0.8"/>
+<pad name="2" x="4.07" y="-2.35" drill="0.8"/>
+<pad name="1" x="2.35" y="-4.07" drill="0.8"/>
+<pad name="12" x="0" y="-4.7" drill="0.8"/>
+<pad name="11" x="-2.35" y="-4.07" drill="0.8"/>
+<pad name="10" x="-4.07" y="-2.35" drill="0.8"/>
+<pad name="9" x="-4.7" y="0" drill="0.8"/>
+<pad name="8" x="-4.07" y="2.35" drill="0.8"/>
+<pad name="7" x="-2.35" y="4.07" drill="0.8"/>
+<text x="-8.89" y="-11.43" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8.89" y="-13.335" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="0" y1="6.35" x2="0" y2="8.89" width="0.127" layer="51"/>
+<wire x1="0" y1="8.89" x2="0.635" y2="8.255" width="0.127" layer="51"/>
+<wire x1="0" y1="8.89" x2="-0.635" y2="8.255" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -327,6 +366,50 @@ Height from PCB: 42.5mm</description>
 <text x="17.78" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="17.78" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="ZM1240">
+<pin name="4" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="3" x="-2.54" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="2" x="-5.08" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="1" x="-7.62" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="5" x="2.54" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="6" x="5.08" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="7" x="7.62" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="0" x="-10.16" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="8" x="10.16" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="9" x="12.7" y="-7.62" visible="off" length="middle" rot="R90"/>
+<circle x="-10.16" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="-5.08" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.08" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="10.16" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="14.605" y="0" radius="0.635" width="0.254" layer="94"/>
+<pin name="DP" x="20.32" y="0" visible="off" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="2.54" x2="12.7" y2="2.54" width="1.016" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="-10.16" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<pin name="A" x="0" y="7.62" visible="off" length="middle" rot="R270"/>
+<text x="-10.414" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">0</text>
+<text x="-7.874" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">1</text>
+<text x="-5.334" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">2</text>
+<text x="-2.794" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">3</text>
+<text x="-0.254" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">4</text>
+<text x="2.286" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">5</text>
+<text x="4.826" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">6</text>
+<text x="7.366" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">7</text>
+<text x="9.906" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">8</text>
+<text x="12.446" y="-6.35" size="1.778" layer="97" rot="R90" align="bottom-center">9</text>
+<text x="19.685" y="0.254" size="1.778" layer="97" align="bottom-center">DP</text>
+<text x="-0.254" y="6.35" size="1.778" layer="97" rot="R90" align="bottom-center">A</text>
+<text x="17.78" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="17.78" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="Z573M" prefix="N">
@@ -345,7 +428,7 @@ The Z573M is coated with a red filter to improve the contrast of display.&lt;/p&
 <gate name="G$1" symbol="Z573M" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="Z57XX">
+<device name="" package="Z570M">
 <connects>
 <connect gate="G$1" pin="0" pad="12"/>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -426,6 +509,32 @@ These tubes incorporate a decimal point and are fitted with a pin base to suid t
 <connect gate="G$1" pin="A" pad="2"/>
 <connect gate="G$1" pin="NC1" pad="1"/>
 <connect gate="G$1" pin="NC2" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ZM1240">
+<gates>
+<gate name="G$1" symbol="ZM1240" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ZM1240">
+<connects>
+<connect gate="G$1" pin="0" pad="10"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="A" pad="11"/>
+<connect gate="G$1" pin="DP" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>
