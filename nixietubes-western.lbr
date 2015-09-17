@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -224,6 +224,28 @@ Symbol Height: 16mm</description>
 <wire x1="0" y1="6.35" x2="0" y2="8.89" width="0.127" layer="51"/>
 <wire x1="0" y1="8.89" x2="0.635" y2="8.255" width="0.127" layer="51"/>
 <wire x1="0" y1="8.89" x2="-0.635" y2="8.255" width="0.127" layer="51"/>
+</package>
+<package name="SK-136">
+<pad name="P$1" x="5.588" y="4.318" drill="2"/>
+<pad name="P$2" x="5.588" y="-4.318" drill="2"/>
+<pad name="P$3" x="5.588" y="0" drill="2"/>
+<pad name="P$4" x="-5.588" y="4.318" drill="2"/>
+<pad name="P$5" x="-5.588" y="0" drill="2"/>
+<pad name="P$6" x="-5.588" y="-4.318" drill="2"/>
+<pad name="P$9" x="0" y="8.636" drill="2"/>
+<pad name="P$7" x="0" y="-8.636" drill="2"/>
+<pad name="P$8" x="3.81" y="7.62" drill="2"/>
+<pad name="P$10" x="-3.81" y="7.62" drill="2"/>
+<pad name="P$11" x="-3.81" y="-7.62" drill="2"/>
+<pad name="P$12" x="3.81" y="-7.62" drill="2"/>
+<wire x1="-1.5" y1="-6.5" x2="-3.5" y2="-4.5" width="0" layer="20"/>
+<wire x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" width="0" layer="20"/>
+<wire x1="-3.5" y1="4.5" x2="-1.5" y2="6.5" width="0" layer="20"/>
+<wire x1="-1.5" y1="6.5" x2="1.5" y2="6.5" width="0" layer="20"/>
+<wire x1="1.5" y1="6.5" x2="3.5" y2="4.5" width="0" layer="20"/>
+<wire x1="3.5" y1="4.5" x2="3.5" y2="-4.5" width="0" layer="20"/>
+<wire x1="3.5" y1="-4.5" x2="1.5" y2="-6.5" width="0" layer="20"/>
+<wire x1="1.5" y1="-6.5" x2="-1.5" y2="-6.5" width="0" layer="20"/>
 </package>
 </packages>
 <symbols>
