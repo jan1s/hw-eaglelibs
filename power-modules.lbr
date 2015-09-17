@@ -103,6 +103,25 @@
 <wire x1="20" y1="9" x2="20" y2="19" width="0.127" layer="21"/>
 <wire x1="20" y1="19" x2="11" y2="19" width="0.127" layer="21"/>
 </package>
+<package name="MP1584_POWER_MODULE">
+<wire x1="0" y1="0" x2="0" y2="16.75" width="0.127" layer="21"/>
+<wire x1="0" y1="16.75" x2="22" y2="16.75" width="0.127" layer="21"/>
+<wire x1="22" y1="16.75" x2="22" y2="0" width="0.127" layer="21"/>
+<wire x1="22" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="IN_P2" x="1.75" y="1.75" drill="1.2"/>
+<pad name="IN_P1" x="1.75" y="4.25" drill="1.2"/>
+<pad name="IN_M2" x="1.75" y="12.5" drill="1.2"/>
+<pad name="IN_M1" x="1.75" y="15" drill="1.2"/>
+<pad name="OUT_M1" x="20.25" y="15" drill="1.2"/>
+<pad name="OUT_M2" x="20.25" y="12.5" drill="1.2"/>
+<pad name="OUT_P1" x="20.25" y="4.25" drill="1.2"/>
+<pad name="OUT_P2" x="20.25" y="1.75" drill="1.2"/>
+<text x="3.5" y="13.25" size="1.27" layer="21">IN-</text>
+<text x="3.5" y="2.25" size="1.27" layer="21">IN+</text>
+<text x="13.5" y="13.25" size="1.27" layer="21">OUT-</text>
+<text x="13.5" y="2.25" size="1.27" layer="21">OUT+</text>
+<text x="4" y="8" size="1.27" layer="21">DC-DC Converter</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POWER_MODULE">
@@ -128,6 +147,24 @@
 <connect gate="G$1" pin="IN-" pad="IN-"/>
 <connect gate="G$1" pin="OUT+" pad="OUT+"/>
 <connect gate="G$1" pin="OUT-" pad="OUT-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWER_MODULE_MP1584">
+<gates>
+<gate name="G$1" symbol="POWER_MODULE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MP1584_POWER_MODULE">
+<connects>
+<connect gate="G$1" pin="IN+" pad="IN_P1 IN_P2"/>
+<connect gate="G$1" pin="IN-" pad="IN_M1 IN_M2"/>
+<connect gate="G$1" pin="OUT+" pad="OUT_P1 OUT_P2"/>
+<connect gate="G$1" pin="OUT-" pad="OUT_M1 OUT_M2"/>
 </connects>
 <technologies>
 <technology name=""/>
