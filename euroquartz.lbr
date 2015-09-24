@@ -160,6 +160,29 @@
 <text x="-1.5" y="1.504" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.5" y="-2.762" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="2PIN50X32">
+<smd name="P$1" x="-2" y="0" dx="2" dy="2.4" layer="1"/>
+<smd name="P$2" x="2" y="0" dx="2" dy="2.4" layer="1"/>
+<wire x1="-2.4" y1="1.6" x2="2.4" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="-1.6" x2="2.4" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="1.6" x2="-2.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-1.5" x2="-2.4" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-1.6" x2="2.4" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="2.4" y1="-1.6" x2="2.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.5" x2="2.4" y2="1.6" width="0.127" layer="51"/>
+<wire x1="2.4" y1="1.6" x2="-2.4" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="1.5" x2="-2.5" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="0.5" x2="-2.4" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="0.4" x2="-2.4" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-0.4" x2="-2.5" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-0.5" x2="-2.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.5" x2="2.5" y2="0.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="0.5" x2="2.4" y2="0.4" width="0.127" layer="51"/>
+<wire x1="2.4" y1="0.4" x2="2.4" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="2.4" y1="-0.4" x2="2.5" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-0.5" x2="2.5" y2="-1.5" width="0.127" layer="51"/>
+<text x="-2.54" y="-3.175" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="Q">
@@ -349,6 +372,22 @@
 <connect gate="G$1" pin="CLK" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="532-CRYSTAL">
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2PIN50X32">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
