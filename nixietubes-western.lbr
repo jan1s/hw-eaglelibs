@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -72,6 +72,32 @@
 <description>&lt;h1&gt;Western Nixietubes&lt;/h1&gt;
 &lt;author&gt;Created by jan1s&lt;/author&gt;</description>
 <packages>
+<package name="ZM1325">
+<description>This is the footprint suitable for the following nixie tubes: &lt;br&gt;
+* ZM1325 &lt;br&gt;
+&lt;br&gt;
+Tube diameter: 13mm&lt;br&gt;
+Height from PCB: 37mm</description>
+<circle x="0" y="0" radius="6.5" width="0.127" layer="51"/>
+<pad name="6" x="0" y="3.5" drill="0.6"/>
+<pad name="7" x="1.75" y="3" drill="0.6"/>
+<pad name="8" x="3" y="1.75" drill="0.6"/>
+<pad name="9" x="3.5" y="0" drill="0.6"/>
+<pad name="10" x="3" y="-1.75" drill="0.6"/>
+<pad name="11" x="1.75" y="-3" drill="0.6"/>
+<pad name="12" x="0" y="-3.5" drill="0.6"/>
+<pad name="1" x="-1.75" y="-3" drill="0.6"/>
+<pad name="2" x="-3" y="-1.75" drill="0.6"/>
+<pad name="3" x="-3.5" y="0" drill="0.6"/>
+<pad name="4" x="-3" y="1.75" drill="0.6"/>
+<pad name="5" x="-1.75" y="3" drill="0.6"/>
+<wire x1="4.2" y1="-1.5" x2="5.3" y2="-1.95" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-1.95" x2="5.1" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-1.95" x2="4.8" y2="-2.15" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="51"/>
+<text x="-5.75" y="-8" size="1.016" layer="25">&gt;NAME</text>
+<text x="-5.75" y="-9.25" size="1.016" layer="27">&gt;VALUE</text>
+</package>
 <package name="Z570M">
 <description>This is the footprint suitable for the following nixie tubes: &lt;br&gt;
 * Z570M &lt;br&gt;
@@ -249,6 +275,62 @@ Symbol Height: 16mm</description>
 </package>
 </packages>
 <symbols>
+<symbol name="ZM1325">
+<pin name="9" x="-10.16" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="8" x="-7.62" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="7" x="-5.08" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="6" x="-2.54" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="5" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="4" x="2.54" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="3" x="5.08" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="2" x="7.62" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="1" x="10.16" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="0" x="12.7" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="DP" x="-17.78" y="0" visible="off" length="middle"/>
+<pin name="A" x="0" y="7.62" visible="off" length="middle" rot="R270"/>
+<wire x1="-10.16" y1="-5.08" x2="-15.24" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="-15.24" y1="0" x2="-10.16" y2="5.08" width="0.254" layer="94" curve="-90"/>
+<wire x1="12.7" y1="5.08" x2="17.78" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="17.78" y1="0" x2="12.7" y2="-5.08" width="0.254" layer="94" curve="-90"/>
+<wire x1="-10.16" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<circle x="-12.065" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="-10.16" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="-7.62" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="-5.08" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="-2.54" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.08" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="10.16" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="12.7" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="12.7" y2="2.54" width="1.016" layer="94"/>
+<text x="12.7" y="0" size="1.27" layer="94" align="center">0</text>
+<text x="10.16" y="0" size="1.27" layer="94" align="center">1</text>
+<text x="7.62" y="0" size="1.27" layer="94" align="center">2</text>
+<text x="5.08" y="0" size="1.27" layer="94" align="center">3</text>
+<text x="2.54" y="0" size="1.27" layer="94" align="center">4</text>
+<text x="0" y="0" size="1.27" layer="94" align="center">5</text>
+<text x="-2.54" y="0" size="1.27" layer="94" align="center">6</text>
+<text x="-5.08" y="0" size="1.27" layer="94" align="center">7</text>
+<text x="-7.62" y="0" size="1.27" layer="94" align="center">8</text>
+<text x="-10.16" y="0" size="1.27" layer="94" align="center">9</text>
+<text x="12.446" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">0</text>
+<text x="9.906" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">1</text>
+<text x="7.366" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">2</text>
+<text x="4.826" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">3</text>
+<text x="2.286" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">4</text>
+<text x="-0.254" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">5</text>
+<text x="-2.794" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">6</text>
+<text x="-5.334" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">7</text>
+<text x="-7.874" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">8</text>
+<text x="-17.018" y="0.254" size="1.778" layer="95" align="bottom-center">DP</text>
+<text x="-0.254" y="6.35" size="1.778" layer="95" rot="R90" align="bottom-center">A</text>
+<text x="-10.414" y="-6.35" size="1.778" layer="95" rot="R90" align="bottom-center">9</text>
+<text x="17.78" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="17.78" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 <symbol name="Z573M">
 <pin name="9" x="-10.16" y="-7.62" visible="off" length="middle" rot="R90"/>
 <pin name="8" x="-7.62" y="-7.62" visible="off" length="middle" rot="R90"/>
@@ -607,6 +689,32 @@ These tubes incorporate a decimal point and are fitted with a pin base to suid t
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
 <connect gate="G$1" pin="A" pad="11"/>
+<connect gate="G$1" pin="DP" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ZM1325">
+<gates>
+<gate name="G$1" symbol="ZM1325" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ZM1325">
+<connects>
+<connect gate="G$1" pin="0" pad="4"/>
+<connect gate="G$1" pin="1" pad="3"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$1" pin="3" pad="6"/>
+<connect gate="G$1" pin="4" pad="7"/>
+<connect gate="G$1" pin="5" pad="8"/>
+<connect gate="G$1" pin="6" pad="10"/>
+<connect gate="G$1" pin="7" pad="9"/>
+<connect gate="G$1" pin="8" pad="11"/>
+<connect gate="G$1" pin="9" pad="2"/>
+<connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="DP" pad="12"/>
 </connects>
 <technologies>
